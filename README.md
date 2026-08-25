@@ -97,9 +97,9 @@ Flask, DRF, SQL, Docker, AWS, Git, Linux, JavaScript, HTML, and CSS.
 
 <!-- Snake eats the contribution graph - .github/workflows/snake.yml -->
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/ashishm2909/ashishm2909/output/snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ashishm2909/ashishm2909/output/snake.svg">
-  <img src="https://raw.githubusercontent.com/ashishm2909/ashishm2909/output/snake.svg" width="100%" alt="snake eating the contribution graph">
+  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/ashishm2909/ashishm2909/output/snake-dark.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ashishm2909/ashishm2909/output/snake.svg?v=2">
+  <img src="https://raw.githubusercontent.com/ashishm2909/ashishm2909/output/snake.svg?v=2" width="100%" alt="snake eating the contribution graph">
 </picture>
 
 </div>
