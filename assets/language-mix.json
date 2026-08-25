@@ -1,0 +1,11 @@
+{
+  "title": "Ashish S. Mishra · technology mix",
+  "axes": [
+    { "label": "Python",               "value": 92 },
+    { "label": "Django & Backend",     "value": 85 },
+    { "label": "REST APIs",            "value": 82 },
+    { "label": "SQL & Data Analytics", "value": 75 },
+    { "label": "Cloud & DevOps",       "value": 70 },
+    { "label": "AI, LLMs & RAG",       "value": 55 }
+  ]
+}
