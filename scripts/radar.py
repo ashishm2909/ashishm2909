@@ -143,8 +143,10 @@ def text_width(s, font_size):
 
 
 def render(title, axes, theme: str, size: int, rings: int, show_values: bool,
-           animate: bool) -> str:
-    c = THEMES[theme]
+        animate: bool, palette: str) -> str:
+    c = {**THEMES[theme]}
+    if palette == "blue":
+     c.update(fill="#2f81f7", stroke="#388bfd", vertex="#79c0ff")
     n = len(axes)
     r = size / 2 - 8
     gap = 20  # how far the labels sit beyond the outer ring
@@ -289,6 +291,7 @@ def main(argv=None):
                    help="--github axis scaling: 1.0 linear, 0.5 sqrt (default), "
                         "0.3 flattens a one-language-dominant profile")
     p.add_argument("--values", action="store_true", help="print the number per axis")
+    p.add_argument("--palette", choices=("green", "blue"), default="green")
     p.add_argument("--no-animate", dest="animate", action="store_false",
                    help="disable the grow-in animation")
     args = p.parse_args(argv)
@@ -310,7 +313,7 @@ def main(argv=None):
     args.out.parent.mkdir(parents=True, exist_ok=True)
     for theme in ("dark", "light"):
         svg = render(title, axes, theme, args.size, args.rings, args.values,
-                     args.animate)
+                     args.animate, args.palette)
         dest = args.out.with_name(f"{args.out.name}-{theme}.svg")
         dest.write_text(svg, encoding="utf-8")
         print(f"wrote {dest}  ({len(axes)} axes)")

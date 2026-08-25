@@ -71,11 +71,11 @@ Flask, DRF, SQL, Docker, AWS, Git, Linux, JavaScript, HTML, and CSS.
 </td>
 <td width="50%" align="center" valign="middle">
 
-<!-- Live language mix calculated from code in your public repositories -->
+<!-- Project Language Mix - calculated from code in your public repositories -->
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="assets/radar-langs-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/radar-langs-light.svg">
-  <img src="assets/radar-langs-dark.svg" width="400" alt="technology mix radar chart">
+  <img src="assets/radar-langs-dark.svg" width="400" alt="project language mix radar chart">
 </picture>
 
 </td>

@@ -38,7 +38,7 @@ jobs:
           python scripts/radar.py \
             --github "${{ github.repository_owner }}" \
             -o assets/radar-langs \
-            --limit 7 --values --curve 0.4 \
+            --limit 7 --values --curve 0.4 --palette blue \
             --exclude "shell,makefile,dockerfile,batchfile,procfile"
 
       # Self-hosted stat and repo cards. These replace github-readme-stats and
