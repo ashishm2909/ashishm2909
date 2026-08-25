@@ -68,5 +68,5 @@ jobs:
       # Achievement badges - the self-hosted replacement for
       # github-profile-trophy, whose public instance returns 402 (out of quota)
       # ------------------------------------------------------------------ #
-        - name: Achievements
-          run: python scripts/achievements.py
+      - name: Achievements
+        run: python scripts/achievements.py
