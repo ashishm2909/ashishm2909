@@ -3,10 +3,10 @@
   "_comment": "PLACEHOLDER NUMBERS - these are inferred from the languages in your public repos, not from you. Edit them. Values are 0-100 and purely self-rated; 5-8 axes reads best.",
   "axes": [
     { "label": "Python",              "value": 92 },
-    { "label": "Django / Backend",    "value": 85 },
+    { "label": "Django & Backend",    "value": 85 },
     { "label": "REST APIs",           "value": 82 },
-    { "label": "SQL / Analytics",     "value": 75 },
-    { "label": "Cloud / DevOps",      "value": 70 },
-    { "label": "AI / LLMs / RAG",     "value": 55 }
+    { "label": "SQL & Data Analytics", "value": 75 },
+    { "label": "Cloud & DevOps",      "value": 70 },
+    { "label": "AI, LLMs & RAG",      "value": 55 }
   ]
 }
