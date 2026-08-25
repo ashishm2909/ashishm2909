@@ -6,7 +6,7 @@ Replaces github-readme-stats / github-profile-trophy / streak-stats, which are
 shared public instances that go down (503), run out of quota (402) or time out.
 These are files in your own repo, so they render as long as GitHub renders.
 
-    python scripts/cards.py --user gargibhardwaj24 --out assets
+    python scripts/cards.py --user ashishm2909 --out assets
 
 Writes <out>/card-stats-{dark,light}.svg plus one card per repo listed in
 assets/projects.json, as <out>/card-<repo>-{dark,light}.svg.
