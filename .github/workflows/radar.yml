@@ -8,7 +8,6 @@ on:
     branches: [main]
     paths:
       - "assets/skills.json"
-      - "assets/language-mix.json"
       - "assets/projects.json"
       - "scripts/radar.py"
       - "scripts/cards.py"
@@ -31,9 +30,16 @@ jobs:
       - name: Skill radar
         run: python scripts/radar.py --data assets/skills.json -o assets/radar
 
-      # Profile technology mix, using self-rated values from assets/language-mix.json
+      # Live language mix calculated from code in Ashish's public repositories
       - name: Language radar
-        run: python scripts/radar.py --data assets/language-mix.json -o assets/radar-langs --values
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/radar.py \
+            --github "${{ github.repository_owner }}" \
+            -o assets/radar-langs \
+            --limit 7 --values --curve 0.4 \
+            --exclude "shell,makefile,dockerfile,batchfile,procfile"
 
       # Self-hosted stat and repo cards. These replace github-readme-stats and
       # github-profile-trophy, whose shared public instances return 503 and 402.
