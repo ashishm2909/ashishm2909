@@ -1,0 +1,11 @@
+{
+  "title": "Ashish S. Mishra · project focus",
+  "axes": [
+    { "label": "Backend Engineering",  "value": 90 },
+    { "label": "AI & Agentic Systems",   "value": 88 },
+    { "label": "Web Applications",       "value": 84 },
+    { "label": "Data & Analytics",       "value": 76 },
+    { "label": "Cloud & DevOps",         "value": 72 },
+    { "label": "Computer Vision / NLP",  "value": 68 }
+  ]
+}
